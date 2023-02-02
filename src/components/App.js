@@ -3,7 +3,9 @@ import { Container } from 'react-bootstrap';
 import { AuthProvider } from '../context/Authcontext';
 import Signup from './Singup';
 import Dashboard from './Dashboard';
+import Login from './Login';
 import { BrowserRouter as Router, Routes , Route } from "react-router-dom"
+
 
 export default function App() {
   return (
@@ -15,9 +17,9 @@ export default function App() {
           <Router>
           <AuthProvider>
             <Routes>
-            <Route exact path="/" element={ <Dashboard />} />
+              <Route exact path="/" element={ <Dashboard />} />
               <Route path="/signup" element={ <Signup />} />
-              
+              <Route path="/login" element={ <Login />} />
             </Routes>
           </AuthProvider>
         </Router>
