@@ -45,8 +45,8 @@ export default function Signup() {
   return (
     <>
           < Card>
-              <Card.Body>   
-                  <img src={logo} alt="Logo"/>
+              <Card.Body> 
+                <div className='d-flex justify-content-center'><img src={logo} alt="Logo"/></div>  
                   <h2 className='text-center mb-4 '>Sign Up</h2>
                   
                   {error && <Alert variant='danger'>{ error }</Alert>}

@@ -37,10 +37,10 @@ export default function Login() {
   return (
     <>
           < Card>
-              <Card.Body>   
-                  <img src={logo} alt="Logo"/>
+          
+              <Card.Body> 
+                <div className='d-flex justify-content-center'><img className='w-20' src={logo} alt="Logo"/></div>  
                   <h2 className='text-center mb-4 '>Log In</h2>
-                  
                   {error && <Alert variant='danger'>{ error }</Alert>}
                   <Form onSubmit={handleSubmit}>    
                       {/* Email */}
